@@ -1,0 +1,47 @@
+
+ body{
+     background-color: #03002b;
+     color: #c6c6c7;
+     font-family:"Roboto mono" ;
+ }
+  
+.form-control{
+    background-color:lightslategray ;
+    color: lightgray;
+}
+.custom-select
+{
+    background-color:lightslategray;
+    color: lightgray;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: white !important;
+    background-color: lightslategray !important;
+  }
+
+    
+    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+    
+    
+    input::-webkit-outer-spin-button,
+  
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  
+    }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  
+    }
+
+    input[type=text]::placeholder,input[type=number]::placeholder,input[type=email]::placeholder{
+    color: white;
+        
+      }
+      textarea[id=validationTextarea]::placeholder{
+        color: white;
+      }
