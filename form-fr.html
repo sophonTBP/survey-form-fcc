@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survey Form FCC</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link href="main.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+
+</head>
+
+<body>
+  <form class="needs-validation" id="survey-form">
+    <div class="container">
+      <div class="py-5 text-center">
+
+        <h1 id="title">Formulaire de Sondage</h1>
+        <p id="description" class="lead">
+            Cette page est un formulaire bâti avec Bootstrap.
+            Bootstrap est une biblioteque d'éléments web gratuite qui donne à ses utilisateurs
+            la possibilité de créer des pages webs standardisé rapidement.<br>
+            Pour illustrer ses possibilités j'ai recréé le fomulaire de satisfaction du site FreeCodeCamp        
+            
+            </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+         
+          <h4 class="mb-3">
+              
+            Que pourrions nous améliorer?
+            </h4>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="front-end" id="front-end" class="custom-control-input styled"
+              id="front-end">
+            <label class="custom-control-label" for="front-end">Front-end Projects</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="back-end" id="back-end" class=" styled custom-control-input" id="back-end">
+            <label class="custom-control-label" for="back-end">Back-end Projects</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="data" id="data" class="custom-control-input" id="data">
+            <label class="custom-control-label" for="data">Data Visualization</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="challenge" id="challenge" class="custom-control-input" id="challenge">
+            <label class="custom-control-label" for="challenge">Challenges</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="open-source" id="open-source" class="custom-control-input" id="open-source">
+            <label class="custom-control-label" for="open-source">Open Source Community</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="gitter" id="gitter" class="custom-control-input" id="gitter">
+            <label class="custom-control-label" for="gitter">Gitter help rooms</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="videos" id="videos" class="custom-control-input" id="videos">
+            <label class="custom-control-label" for="videos">Videos</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="city-meetups" id="city-meetups" class="custom-control-input"
+              id="city-meetups">
+            <label class="custom-control-label" for="city-meetups"">City Meetups</label>
+
+          </div>
+          <div class=" custom-control custom-checkbox">
+              <input type="checkbox" value="wiki" class="custom-control-input" id="wiki">
+              <label class="custom-control-label" for="wiki">Wiki</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="forum" class="custom-control-input" id="forum">
+            <label class="custom-control-label" for="forum">Forum</label>
+
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" value="additional-courses" class="custom-control-input" id="additional-courses">
+            <label class="custom-control-label" for="additional-courses">Additional Courses</label>
+
+          </div>
+<hr class="my-1">
+          <h4 class="mb-5 pt-5">
+              
+            recommanderiez vous Fcc a un ami?
+            </h4>
+
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input value="definitely" name="radio" type="radio" class="custom-control-input" id="definitely" checked
+                required>
+              <label class="custom-control-label" for="definitely">
+                  Absolument</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input value="maybe" name="radio" type="radio" class="custom-control-input" id="maybe" required>
+              <label class="custom-control-label" for="maybe">peut-être</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input value="notsure" name="radio" type="radio" class="custom-control-input warning" id="notsure"
+                required>
+              <label class="custom-control-label" for="notsure">incertain</label>
+            </div>
+
+          </div>
+
+
+          
+          
+
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Merci d'avoir pris le temps de nous aider a améliorere la plateforme</h4>
+
+          <div class="row">
+
+            <div class="col-md-5 mb-3">
+              <label for="name" id="name-label">Nom complet</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="merci d'entrer votre nom" required>
+              <div class="invalid-feedback">
+                Merci de taper un nom valide
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <label for="age" id="number-label">Age</label>
+              <input type="number" placeholder="99" class="form-control" size="30" min="8" max="100" id="number"
+                required />
+            </div>
+            <div class="col-md-5 mb-3">
+              <label for="email" id="email-label">Email <span class="text-muted "></span></label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="vous@example.com" required>
+              <div class="invalid-feedback">
+                Merci de taper une adresse email valid.
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="mb-3">
+            <label for="address">Addresse</label>
+            <input type="text" class="form-control" id="address"  required>
+            <div class="invalid-feedback">
+                Merci de taper votre addresse.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">Addresse 2 <span class="text-muted">(Optionel)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="N°Apartment">
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Pays</label>
+              <select class="custom-select d-block w-100" id="country" required>
+                <option value="">Choisissez...</option>
+                <option>France</option>
+              </select>
+              <div class="invalid-feedback">
+                Merci de choisir un pays valide.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">Region</label>
+              <select class="custom-select d-block w-100" id="state" required>
+                <option value="">Choisissez...</option>
+                <option>Normandie</option>
+              </select>
+              <div class="invalid-feedback">
+                Merci de choisir une region valide.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Code Postal</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Code Postal requis.
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Quelle option decrie le mieux votre poste actuel?
+                
+                </p>
+            <select id="dropdown" name="role" class="form-control custom-select mb-3" required>
+              <option disabled selected value>Sélectionnez un role</option>
+              <option value="student">Etudiant</option>
+              <option value="job">Emploi à plein temps</option>
+              <option value="learner">Apprenant permanent</option>
+              <option value="preferNo">Ne se prononce pas</option>
+              <option value="other">Autre</option>
+            </select>
+
+            <div class="form-group">
+              <p>
+                Quelle est la partie que vous préférez sur freecodeCamp?
+              </p>
+              <select id="most-like" name="mostLike" class="form-control custom-select" required>
+                <option disabled selected value>Sélectionnez une option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+              </select>
+            </div>
+            <hr class="mb-5">
+            <div class="mb-3">
+              <h4 class="mb-1">Commentaires ou suggestions?</h4>
+              <label for="validationTextarea"></label>
+              <textarea class="form-control" id="validationTextarea"
+                ></textarea>
+              
+            </div>
+
+            <hr class="mb-5">
+            <button class="btn-floating submit-button btn-lg btn-block btn-rounded waves-effect" type="submit"
+              id="submit">Envoyer</button>
+          </div>
+          </div>
+  </form>
+  </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <a href="../index.html" class="site-logo" aria-label="homepage"> 
+      <span class="logo-text">Portfolio</span>
+
+  </footer>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
