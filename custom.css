@@ -1,23 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
 body {
-  background-color: #03002b;
-  color: #c6c6c7;
+  background-color: #00142e;
+  color: #f8fafa;
   font-family: "Roboto mono";
 }
 
 .form-control {
-  background-color: lightslategray;
-  color: lightgray;
+  background-color: #677b8f;
+  color: white;
 }
 
 .custom-select {
   background-color: lightslategray;
-  color: lightgray;
+  color: white;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: white !important;
   background-color: lightslategray !important;
+}
+
+.portfolio {
+  color: white;
 }
 
 input::-webkit-outer-spin-button,
@@ -31,11 +35,26 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+input[type=text]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=email]::-moz-placeholder {
+  color: white;
+}
+
+input[type=text]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder {
+  color: white;
+}
+
 input[type=text]::placeholder, input[type=number]::placeholder, input[type=email]::placeholder {
+  color: white;
+}
+
+textarea[id=validationTextarea]::-moz-placeholder {
+  color: white;
+}
+
+textarea[id=validationTextarea]:-ms-input-placeholder {
   color: white;
 }
 
 textarea[id=validationTextarea]::placeholder {
   color: white;
-}
-/*# sourceMappingURL=custom.css.map */
+}/*# sourceMappingURL=custom.css.map */

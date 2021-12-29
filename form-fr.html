@@ -12,7 +12,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<link href="main.css" rel="stylesheet">
+<link href="custom.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 
@@ -23,14 +23,16 @@
     <div class="container">
       <div class="py-5 text-center">
 
-        <h1 id="title">Formulaire de Sondage</h1>
-        <p id="description" class="lead">
-            Cette page est un formulaire bâti avec Bootstrap.
-            Bootstrap est une biblioteque d'éléments web gratuite qui donne à ses utilisateurs
-            la possibilité de créer des pages webs standardisé rapidement.<br>
-            Pour illustrer ses possibilités j'ai recréé le fomulaire de satisfaction du site FreeCodeCamp        
+        <h1 id="title" class="mb-4 display-4">Formulaire de Sondage</h1>
+        
+        <h6 id="description" class="">
+            Cette page est un formulaire bâti avec Bootstrap.<br>
+            Bootstrap est une bibliothèque d'éléments web gratuite qui donne aux développeurs<br>
+            la possibilité de créer des pages web standardisées rapidement.<br>
+            Pour illustrer ses possibilités j'ai recréé le formulaire de satisfaction du site FreeCodeCamp. <br>
+            (Se site est adapté à la navigation sur mobile, <br>vous pouvez réduire la taille horizontale de votre fenêtre si vous voulez vous faire une idée.)       
             
-            </p>
+        </h6>
       </div>
 
       <div class="row">
@@ -160,12 +162,12 @@
             <label for="address">Addresse</label>
             <input type="text" class="form-control" id="address"  required>
             <div class="invalid-feedback">
-                Merci de taper votre addresse.
+                Merci de taper votre adresse.
             </div>
           </div>
 
           <div class="mb-3">
-            <label for="address2">Addresse 2 <span class="text-muted">(Optionel)</span></label>
+            <label for="address2">Adresse 2 <span class="text-muted">(Optionnel)</span></label>
             <input type="text" class="form-control" id="address2" placeholder="N°Apartment">
           </div>
 
@@ -199,12 +201,12 @@
             </div>
           </div>
           <div>
-            <p>Quelle option decrie le mieux votre poste actuel?
+            <p>Quelle option décrie le mieux votre poste actuel?
                 
                 </p>
             <select id="dropdown" name="role" class="form-control custom-select mb-3" required>
               <option disabled selected value>Sélectionnez un role</option>
-              <option value="student">Etudiant</option>
+              <option value="student">Étudiant</option>
               <option value="job">Emploi à plein temps</option>
               <option value="learner">Apprenant permanent</option>
               <option value="preferNo">Ne se prononce pas</option>
@@ -213,7 +215,7 @@
 
             <div class="form-group">
               <p>
-                Quelle est la partie que vous préférez sur freecodeCamp?
+                Quelle est la partie que vous préférez sur freeCodeCamp?
               </p>
               <select id="most-like" name="mostLike" class="form-control custom-select" required>
                 <option disabled selected value>Sélectionnez une option</option>
@@ -239,15 +241,17 @@
           </div>
   </form>
   </div>
+
   </div>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <a href="../index.html" class="site-logo" aria-label="homepage"> 
-      <span class="logo-text">Portfolio</span>
+      <a href="../index.html" class="portfolio" aria-label="homepage"> 
+    <span class="portfolio">Retourner au portfolio</span>
+
 
   </footer>
   </div>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+ 
 </body>
 
 </html>
